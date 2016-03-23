@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HelloWorld.Views.LoginPage" Title="LogIn">
+  
+  <ContentPage.Content>
+    <Grid VerticalOptions="CenterAndExpand">
+      <Grid.RowDefinitions>
+        <RowDefinition Height="*"/>
+        <RowDefinition Height="*"/>
+        <RowDefinition Height="*"/>
+        <RowDefinition Height="*"/>
+      </Grid.RowDefinitions>
+      <Entry x:Name="Username" Placeholder="Username" Grid.RowSpan="1"/>
+      <Entry x:Name="Password" IsPassword="True" Grid.Row="1"/>
+      <Button Text="Log In" Grid.Row="2" Clicked="Login_Clicked"/>
+      <Button Text="Sign Up" Grid.Row="3" Clicked="Signup_Clicked"/>
+    </Grid>
+  </ContentPage.Content>
+</ContentPage>
