@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:RadialProgressExample"
+             xmlns:controls="clr-namespace:RadialProgressExample.Controls"
+             x:Class="RadialProgressExample.MainPage">
+
+    <StackLayout Orientation="Vertical"
+                 HorizontalOptions="FillAndExpand"
+                 VerticalOptions="CenterAndExpand">
+        <controls:RadialProgressControl x:Name="radialProgress"
+                                    Minimum="0" 
+                                    Maximum="100"
+                                    Value="0"
+                                    HorizontalOptions="CenterAndExpand"
+                                    VerticalOptions="CenterAndExpand"
+                                    LabelHidden="False"
+                                    ProgressColor="Red"
+                                    HeightRequest="100"
+                                    WidthRequest="100
+                                    "/>
+        <Button x:Name="btnStart"
+                Text="Start"
+                HorizontalOptions="CenterAndExpand"
+                VerticalOptions="CenterAndExpand"
+                Clicked="Button_Clicked"/>
+        
+    </StackLayout>
+
+</ContentPage>
